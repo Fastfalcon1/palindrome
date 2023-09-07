@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  h1 Palindrome Checker
+  form(method="POST" action="/")
+    label(for="userText") Enter Your Text Here:
+    br
+    input(type="text" id="userText" name="userText")
+    br
+    br
+    br
+    button(type="submit") Submit
+    br
+    br
+    br
+    br
+    br
+    br
+    p What is a Palindrome?
+    p  It is a word that can be written backwards the same way it is regularly written
+    br
+    br
+    br
+    br
+    br
+    br
+    p For example
+    p ana
+    p taco cat
+    p kayak
+    if message
+      p=message
